@@ -1,4 +1,4 @@
-export default class TCEncoder {
+class TCEncoder {
   constructor() {
     this.mapping = {};
 
@@ -36,3 +36,5 @@ export default class TCEncoder {
     return this.cacheValue(string, output);
   }
 }
+
+exports.TCEncoder = TCEncoder;
