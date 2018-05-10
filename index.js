@@ -29,7 +29,7 @@ export default class TCEncoder {
       .map((diget, i) => {
         const dozens = Math.pow(10, splittedString.length - i - 1); // e.g 10^3
 
-        this.mapping[diget].repeat(dozens);
+        return this.mapping[diget].repeat(dozens);
       })
       .join('');
 
